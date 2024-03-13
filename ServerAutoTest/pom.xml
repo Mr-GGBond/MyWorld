@@ -16,6 +16,29 @@
             <version>2.2.224</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Spring MVC -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.13</version> <!-- 根据您的需求，选择合适的版本 -->
+        </dependency>
+
+        <!-- Java Servlet API -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version> <!-- 根据您的需求，选择合适的版本 -->
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version> <!-- 根据您的需求，选择合适的版本 -->
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <properties>
