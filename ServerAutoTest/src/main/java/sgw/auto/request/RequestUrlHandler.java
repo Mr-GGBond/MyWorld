@@ -23,6 +23,7 @@ public class RequestUrlHandler extends RequestAbstractHandler{
         //处理每个方法的参数
         resolveMethodParams();
         //加载规则
+        loadRules();
     }
 
     @Override

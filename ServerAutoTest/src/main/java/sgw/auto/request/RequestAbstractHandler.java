@@ -46,4 +46,8 @@ public abstract class RequestAbstractHandler implements RequestService{
     protected void buildStartMethodMap(Class clazz, Object obj) {
 
     }
+
+    protected void loadRules(){
+
+    }
 }
