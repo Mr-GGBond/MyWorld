@@ -12,7 +12,7 @@ import java.util.Map;
  * @Author sgw
  * @Date 2024/3/13 11:20
  **/
-public abstract class RequestAbstractHandler implements RequestService{
+public abstract class DefaultRequestHandler implements RequestService{
     protected Map<String, Method> startMethodMap = new HashMap<>();
     protected Map<String, List<ParamDefinition>> paramDefinitionMap = new HashMap<>();
 
@@ -47,7 +47,24 @@ public abstract class RequestAbstractHandler implements RequestService{
 
     }
 
+    /**
+     * 加载规则
+     */
     protected void loadRules(){
+
+    }
+
+    /**
+     * 创建任务
+     */
+    protected void createJobs(){
+
+    }
+
+    /**
+     * 发送结果
+     */
+    protected void sendResult(){
 
     }
 }

@@ -4,15 +4,13 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.lang.reflect.Method;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @Description
  * @Author sgw
  * @Date 2024/3/13 10:53
  **/
-public class RequestUrlHandler extends RequestAbstractHandler{
+public class RequestUrlHandler extends DefaultRequestHandler {
 
     @Override
     public void start(Class clazz, Object obj) {
@@ -24,11 +22,10 @@ public class RequestUrlHandler extends RequestAbstractHandler{
         resolveMethodParams();
         //加载规则
         loadRules();
-    }
-
-    @Override
-    protected void resolveMethodParams() {
-        super.resolveMethodParams();
+        //生成任务
+        createJobs();
+        //结果通知
+        sendResult();
     }
 
     /**
